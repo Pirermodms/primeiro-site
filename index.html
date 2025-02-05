@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversão de Dinheiro</title>
+  <link rel="stylesheet" href="index.css">
+ <link rel="shortcut icon" href="moeda-teste-programa.ico" type="image/x-icon">
+</head>
+<body>
+    <img src="teste do programa dolar.gif" alt="gif">
+
+    <!--texto do dolar-->
+    <div class="faixa">
+       
+           
+           <h1>Converta Seu Dinheiro Para Dólar</h1>
+           
+           <input id="valorReais" placeholder="Valor em Reais" type="number">
+           
+           <button onclick="converter()">CONVERTER</button>
+           
+           <input id="resultado" placeholder="Valor em Dólares" type="text" readonly>
+           <div>
+
+  </div class= "Euro">
+<!--texto do euro-->
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+<h1>Converta Seu Dinheiro Para Euros</h1>
+<input id="valoreuro" placeholder="Valor Em Reais " type="number">
+<button onclick="converter2()">CONVERTER</button>
+<input id="resultadoeuro" placeholder="Valor Em Euro" type="text" readonly>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<a href="prox1.html">CONHECA NOSSAS PLATAFORMAS</a>
+
+
+
+
+</div>
+
+
+    <script>
+        // codigo da coversao do dolar
+        function converter() {
+            const valorReais = document.getElementById('valorReais').value;
+            const taxaDeCambio = 5.88; // Exemplo de taxa de câmbio para o dólar
+            if (valorReais) {
+                const valorDolar = valorReais / taxaDeCambio;
+                document.getElementById('resultado').value = `US$ ${valorDolar.toFixed(2)}`;
+            } else {
+                document.getElementById('resultado').value = 'Digite um valor';
+            }
+        }
+//codigo euro
+function converter2(){
+    const valoreuro = document.getElementById('valoreuro').value
+const cambioeuro = 6.13
+if (valoreuro) {
+    const resultadoeuro = valoreuro/ cambioeuro;
+    document.getElementById('resultadoeuro').value = `€ ${resultadoeuro.toFixed(2)}`
+
+}else{
+    document.getElementById('resultadoeuro').value = 'Digite Um Valor'
+}
+
+}
+
+
+    </script>
+</body>
+</html>

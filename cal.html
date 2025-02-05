@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<link rel="stylesheet" href="cal.css">
+<link rel="shortcut icon" href="imagem_2025-02-02_183116432.ico" type="image/x-icon">
+</head>
+<nav class="menu-lateral">
+    <div class="expandir">
+        <i class="bi bi-list" id="expmenu"></i>
+    </div>
+
+<ul>
+<li class="item-menu">
+    <a href="prox1.html">
+<span class="icone"><i class="bi bi-house-door"></i></span>
+<span class="textomenu">Home</span>
+    </a>
+</li>
+
+<li class="item-menu">
+    <a href="calendario.html">
+<span class="icone"><i class="bi bi-calendar-event"></i></span>
+<span class="textomenu">Calendário</span>
+    </a>
+</li>
+
+<li class="item-menu">
+    <a href="cps.html">
+<span class="icone"><i class="bi bi-cursor-fill"></i></span>
+<span class="textomenu">Cps</span>
+    </a>
+</li>
+
+<li class="item-menu ativo">
+    <a href="cal.html">
+<span class="icone"><i class="bi bi-calculator-fill"></i></span>
+<span class="textomenu">Calculadora</span>
+    </a>
+</li>
+
+<li class="item-menu">
+    <a href="conta.html">
+<span class="icone"><i class="bi bi-person-circle"></i></span>
+<span class="textomenu">Conta</span>
+    </a>
+</li>
+</ul>
+</nav>
+<script src="prox1.js"></script>
+
+<!--PARTE DA CALCULADORA-->
+
+<body>
+<div class="calculador">
+<h1>Calculadora</h1>
+<p id="result"></p>
+<table>
+
+<tr>
+<td><button class="btc" onclick="clean()">C</button></td>
+<td><button class="btc" onclick="back()"><</button></td>
+<td><button class="btc" onclick="insert('*')">X</button></td>
+<td><button class="btc" onclick="insert('/')">÷</button></td>
+</tr>
+
+<tr>
+<td><button class="btc" onclick="insert('7')">7</button></td> 
+<td><button class="btc" onclick="insert('8')">8</button></td>
+<td><button class="btc" onclick="insert('9')">9</button></td>
+<td><button class="btc" onclick="insert('+')">+</button></td>
+</tr>
+
+<tr>
+<td><button class="btc" onclick="insert('4')">4</button></td> 
+<td><button class="btc" onclick="insert('5')">5</button></td>
+<td><button class="btc" onclick="insert('6')">6</button></td>
+<td><button class="btc" onclick="insert('-')">-</button></td>
+</tr>
+
+<tr>
+<td><button class="btc" onclick="insert('1')">1</button></td> 
+<td><button class="btc" onclick="insert('2')">2</button></td>
+<td><button class="btc" onclick="insert('3')">3</button></td>
+<td rowspan="2" ><button class="btc" style="height: 135px;" onclick="calcular()">=</button></td>
+ </tr>
+
+ <tr>
+ <td colspan="2"><button class="btc" style="width: 176px;" onclick="insert('0')">0</button></td> 
+<td><button class="btc" onclick="insert('.')">.</button></td>
+</tr>
+</table>
+</div> 
+<script src="cal.js"></script>
+</body>
+</html>

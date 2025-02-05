@@ -1,0 +1,104 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: "Open Sans";
+}
+body{
+    height: 100vh;
+    background-color: #202020;
+}
+nav.menu-lateral{
+width: 80px;
+height: 110vh;
+background-color:#202020;
+padding: 20px 0 0 0.3%;
+box-shadow: 4px 0 0 rgb(170, 8, 8);
+position: fixed;
+overflow: hidden;
+transition: .3s;
+}
+
+nav.menu-lateral.expand{
+    width: 300px;
+
+
+
+
+
+
+
+}
+.expandir{
+width: 100%;
+padding-left: 13px;
+
+}
+
+.expandir > i{
+color:white;
+font-size: 40px;
+cursor: pointer;
+
+}
+ul li.item-menu:hover{
+    background-color: rgb(170, 8, 8);
+}
+
+ul li.item-menu{
+    transition: .3s;
+}
+
+ul li.ativo{
+    background-color: rgb(170, 8, 8);
+}
+
+
+ul{
+height: 100%;
+list-style: none;
+
+}
+ul li.item-menu a{
+color: white;
+text-decoration: none;
+padding: 15px;
+display: flex;
+margin-bottom: 20px;
+line-height: 50px;
+}
+
+ul li.item-menu a .textomenu{
+padding-left: 40px;
+font-size: 20px;
+
+}
+ul li.item-menu a .icone{
+font-size: 30px;}
+
+nav.login{
+padding: 10;
+padding-top: 400px;
+width: 400px;
+height: 100vh;
+background-color: #535353;
+color: white;
+
+
+
+}
+
+input.loginn{width: 270px;
+height: 50px;
+
+}
+
+h1.log{
+font-size: 40px;
+
+
+}

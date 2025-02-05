@@ -1,0 +1,55 @@
+body {
+    background-color: #13db42; /* Cor escura para o fundo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    tex
+}
+
+/* Cria a faixa central */
+.faixa {
+    background-color: #00a4f6; /* Cor laranja para a faixa */
+    width: 100%;
+    max-width: 500px; /* Define uma largura máxima */
+    padding: 20px;
+    border-radius: 30px;
+    text-align: center;
+    box-shadow: 0px 5px 15px rgba(27, 11, 207, 0.517);
+}
+
+/* Estiliza os inputs e botão */
+input, button {
+    padding: 20px;
+    font-size: 16px;
+    width: 90%;
+    margin: 10px 0;
+    border: none;
+    border-radius: 10px;
+}
+
+input {
+    background-color: #fff;
+    text-align: center;
+}
+
+button {
+    background-color: #264653;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+
+    background-color: #2a9d8d
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+
+ 
+
+

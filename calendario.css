@@ -8,19 +8,25 @@ padding: 0;
 box-sizing: border-box;
 font-family: "Open Sans";
 }
-body{
+body {
     height: 100vh;
     background-color: #202020;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 nav.menu-lateral{
 width: 80px;
-height: 110vh;
+height: 100vh;
 background-color:#202020;
 padding: 20px 0 0 0.3%;
 box-shadow: 4px 0 0 rgb(170, 8, 8);
 position: fixed;
 overflow: hidden;
 transition: .3s;
+left: 0;
+top: 0;
 }
 
 nav.menu-lateral.expand{
@@ -74,8 +80,71 @@ line-height: 50px;
 
 ul li.item-menu a .textomenu{
 padding-left: 40px;
-font-size: 20px;
+font-size: 20px;}
 
-}
 ul li.item-menu a .icone{
 font-size: 30px;}
+ 
+.semana{
+display: flex;
+background-color: white;
+list-style: none;
+padding: 40px 20px;
+height: 200px;
+gap: 10px;
+border-radius: 20px;
+border: rgb(170, 8, 8);
+border-radius: 3px;
+}.semana li{
+width: 120px;
+height: 120px;
+background-color:rgb(172, 172, 172);
+justify-content: center;
+align-items: center;
+display: flex;
+border-radius: 20px;
+font-size: 23px;
+}
+.semana li.atual{
+position: relative;
+width: 140px;
+height: 140px;
+font-weight: 500;
+background-color: rgb(102, 102, 102);
+font-size: 35px;
+border: 7px  solid #202020;
+transform: translateY(-100px);
+cursor: pointer ;
+}
+.semana li.atual::before{
+content:'' ;
+position: absolute;
+top: 53px;
+left: -25px;
+width: 18px;
+height: 18px;
+border-top-right-radius: 10px;
+box-shadow: 6px -6px #202020;
+background:white
+}
+.semana li.atual::after{
+    content:'' ;
+    position: absolute;
+    top: 53px;
+    right: -25px;
+    width: 18px;
+    height: 18px;
+    border-top-left-radius: 10px;
+    box-shadow: -6px -6px #202020;
+    background:white
+}
+.semana li.atual h1{
+position: absolute;
+transform: translateY(105px);
+font-size: 40px;
+}
+.semana li.atual h5{
+position: absolute;
+font-size: 25px;
+transform: translateY(150px);
+}

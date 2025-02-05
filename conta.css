@@ -11,6 +11,10 @@ font-family: "Open Sans";
 body{
     height: 100vh;
     background-color: #202020;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 nav.menu-lateral{
 width: 80px;
@@ -21,6 +25,8 @@ box-shadow: 4px 0 0 rgb(170, 8, 8);
 position: fixed;
 overflow: hidden;
 transition: .3s;
+top: 0px;
+left: 0px;
 }
 
 nav.menu-lateral.expand{
@@ -80,25 +86,36 @@ font-size: 20px;
 ul li.item-menu a .icone{
 font-size: 30px;}
 
-nav.login{
-padding: 10;
-padding-top: 400px;
+div.loginbox{
+background-color: white;
+height: 450px;
 width: 400px;
-height: 100vh;
-background-color: #535353;
-color: white;
-
-
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+border-radius: 8px;
 
 }
 
-input.loginn{width: 270px;
-height: 50px;
+input{
+width: 300px;
+height: 35px;
+display: grid;
+border-radius: 8px;
+padding-left: 10px;
 
 }
 
-h1.log{
-font-size: 40px;
+form{
+transform: translateY(80px);
+}
+h2{
+    text-align: center;
+padding: 30px;}
 
-
+.enter{
+    background-color: rgb(74, 238, 183);
+    cursor: pointer;
+}
+a.cadas{
+font-size: 17px;
+text-decoration: none;
 }

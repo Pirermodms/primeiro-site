@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MKH - Cadastro</title>
+    <link rel="stylesheet" href="cadas.css">
+</head>
+<body>
+
+<main class="principal">
+    <form id="cadastroForm">
+        <h1>Crie Sua Conta</h1>
+
+        <div class="input">
+            <input type="email" id="email" placeholder="E-mail" required>
+        </div>
+        <div class="input">
+            <input type="password" id="senha" placeholder="Senha" required>
+        </div>
+        <div class="input">
+            <input type="password" id="confirmSenha" placeholder="Digite Novamente Sua Senha" required>
+        </div>
+
+        <button type="submit">Criar</button>
+    </form>
+</main>
+
+<script>
+document.getElementById("cadastroForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // Evita o envio padrão do formulário
+
+    let senha = document.getElementById("senha").value;
+    let confirmSenha = document.getElementById("confirmSenha").value;
+
+    if (senha !== confirmSenha) {
+        alert("As senhas não coincidem. Tente novamente.");
+        return;
+    }
+
+    // Redireciona para a próxima página após validação
+    window.location.href = "conta.html";
+});
+</script>
+
+</body>
+</html>

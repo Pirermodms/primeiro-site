@@ -27,6 +27,7 @@ overflow: hidden;
 transition: .3s;
 left: 0;
 top: 0;
+z-index: 4;
 }
 
 nav.menu-lateral.expand{
@@ -141,10 +142,11 @@ background:white
 .semana li.atual h1{
 position: absolute;
 transform: translateY(105px);
-font-size: 40px;
+font-size: 50px;
+text-align: center;
 }
 .semana li.atual h5{
 position: absolute;
 font-size: 25px;
-transform: translateY(150px);
+transform: translateY(160px);
 }
